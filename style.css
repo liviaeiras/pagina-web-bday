@@ -1,0 +1,171 @@
+/* Reseta o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Preto de fundo */
+    color: #0f0; /* Verde vibrante para texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal da página */
+.container {
+    text-align: center;
+    background-color: #1a1a1a; /* Fundo escuro */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 255, 0, 0.3); /* Sombra com um leve tom verde */
+    max-width: 800px;
+    width: 100%;
+    border: 2px solid #0f0; /* Bordas verdes */
+}
+
+/* Estilo da imagem de capa girando */
+.cover-photo {
+    margin-bottom: 20px;
+    animation: spin 10s linear infinite; /* Animação mais lenta para a capa */
+}
+
+.cover-photo img {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #0f0; /* Bordas verdes */
+}
+
+/* Cabeçalho */
+header {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #0f0; /* Título em verde */
+}
+
+p {
+    font-size: 1.2rem;
+    color: #b3ffb3; /* Tom de verde mais claro para o texto */
+}
+
+/* Estilo da primeira foto que vai girar */
+.main-photo {
+    display: inline-block;
+    animation: spin 6s linear infinite; /* Animação girando para a primeira foto */
+}
+
+.main-photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #0f0; /* Bordas verdes */
+}
+
+/* Animação de rotação */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Estilo das fotos extras (galeria) */
+.extra-photos {
+    margin-top: 30px;
+}
+
+.extra-photos h2 {
+    font-size: 2rem;
+    color: #0f0;
+}
+
+.photos-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.photos-grid img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #0f0; /* Bordas verdes */
+    box-shadow: 0 4px 6px rgba(0, 255, 0, 0.3); /* Sombra com leve tom verde */
+}
+
+/* Estilo da playlist do Spotify */
+.spotify-playlist {
+    margin: 30px 0;
+}
+
+.spotify-playlist h2 {
+    font-size: 2rem;
+    color: #0f0;
+}
+
+iframe {
+    border-radius: 10px;
+    border: 2px solid #0f0; /* Borda verde em volta da playlist */
+}
+
+/* Estilo da caixa de presentes e botão surpresa */
+.gift-box {
+    background-color: #0d0d0d; /* Fundo preto profundo */
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 2px solid #0f0; /* Bordas verdes */
+}
+
+.gift-box h2 {
+    font-size: 2rem;
+    color: #0f0;
+}
+
+.surprise-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0f0; /* Botão verde */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.surprise-button:hover {
+    background-color: #00cc00; /* Verde mais claro ao passar o mouse */
+}
+
+.hidden-photo {
+    margin-top: 20px;
+    display: none;
+}
+
+.hidden-photo img {
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #0f0; /* Bordas verdes */
+    box-shadow: 0 4px 6px rgba(0, 255, 0, 0.3); /* Sombra com verde */
+}
+
+/* Rodapé */
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #b3ffb3;
+}
